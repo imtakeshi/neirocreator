@@ -1801,3 +1801,126 @@ li {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   Модальное окно заявки
+   ========================= */
+
+.lead-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px;
+  background: rgba(4, 9, 18, 0.85);
+  box-sizing: border-box;
+}
+
+.lead-modal[hidden] {
+  display: none !important;
+}
+
+.lead-modal__panel {
+  width: min(980px, 100%);
+  background: linear-gradient(180deg, #05121b 0%, #07121d 100%);
+  border: 1px solid rgba(41, 211, 193, 0.25);
+  border-radius: 18px;
+  padding: 28px 28px 30px;
+  position: relative;
+}
+
+.lead-modal__close {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(10, 16, 32, 0.7);
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.lead-modal__title {
+  margin: 0 0 18px;
+  text-align: center;
+  color: #f4f8ff;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+}
+
+.lead-modal__form {
+  display: grid;
+  gap: 12px;
+}
+
+.lead-modal__field input {
+  width: 100%;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: #ffffff;
+  color: #1e2d46;
+  border-radius: 0;
+  padding: 0 20px;
+  font-size: 1.05rem;
+}
+
+.lead-modal__field input::placeholder {
+  color: #8a93a6;
+}
+
+.lead-modal__textlabel {
+  margin-top: 2px;
+  color: #f5f8ff;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.lead-modal__submit {
+  justify-self: center;
+  margin-top: 6px;
+  min-width: 290px;
+  height: 60px;
+  border: 0;
+  border-radius: 999px;
+  background: #00e8ff;
+  color: #031218;
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 680px) {
+  .lead-modal__panel {
+    padding: 20px 14px 20px;
+  }
+
+  .lead-modal__field input {
+    height: 52px;
+    font-size: 0.98rem;
+  }
+
+  .lead-modal__textlabel {
+    font-size: 1.35rem;
+  }
+
+  .lead-modal__submit {
+    min-width: 240px;
+    height: 52px;
+    font-size: 1.4rem;
+  }
+}

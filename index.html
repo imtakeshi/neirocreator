@@ -119,7 +119,7 @@
               </div>
             </div>
             <p class="offer-card__price">3 900 ₽</p>
-            <a class="btn btn--hero-cta" href="#offer">
+            <a class="btn btn--hero-cta js-open-lead-form" href="#offer">
               <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fill="currentColor"
@@ -421,7 +421,7 @@
             </article>
           </div>
           <div class="earning-paths__cta-wrap">
-            <a class="btn btn--hero-cta earning-paths__cta" href="#offer">
+            <a class="btn btn--hero-cta earning-paths__cta js-open-lead-form" href="#offer">
               <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill="currentColor" d="M13 2L3 14h7v8l11-13h-8l0-7z" />
               </svg>
@@ -579,7 +579,7 @@
           </div>
 
           <div class="fits-cta-wrap">
-            <a class="fits-cta" href="#offer">
+            <a class="fits-cta js-open-lead-form" href="#offer">
               <span class="fits-cta__icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path d="M13 2L3 14h7v8l11-13h-8l0-7z" fill="currentColor" />
@@ -862,7 +862,7 @@
         <p class="label">ФИНАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
         <h2>Зайди в НейроКреатор и начни зарабатывать с помощью ИИ</h2>
         <p class="price-line">3 900 ₽ / 3 месяца</p>
-        <a class="btn large" href="#">ПОЛУЧИТЬ ДОСТУП ЗА 3900 ₽</a>
+        <a class="btn large js-open-lead-form" href="#">ПОЛУЧИТЬ ДОСТУП ЗА 3900 ₽</a>
         <p class="note">
           Нажимая на кнопку, вы соглашаетесь с условиями публичной оферты и политики обработки
           данных.
@@ -902,8 +902,57 @@
       </div>
     </div>
 
+    <div
+      class="lead-modal"
+      id="lead-modal"
+      hidden
+      aria-modal="true"
+      role="dialog"
+      aria-label="Форма входа в НейроКреатор"
+    >
+      <div class="lead-modal__panel">
+        <button type="button" class="lead-modal__close" aria-label="Закрыть">×</button>
+        <h3 class="lead-modal__title">Войти в Нейрокреатор:</h3>
+
+        <form
+          class="lead-modal__form"
+          action="https://formsubmit.co/kitinsss@yandex.ru"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="Новая заявка с сайта НейроКреатор" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_autoresponse" value="Спасибо! Мы получили вашу заявку и скоро свяжемся с вами." />
+
+          <label class="lead-modal__field">
+            <span class="sr-only">Имя</span>
+            <input type="text" name="Имя" placeholder="Введите ваше имя" required />
+          </label>
+
+          <label class="lead-modal__field">
+            <span class="sr-only">Электронная почта</span>
+            <input type="email" name="Email" placeholder="Введите ваш эл. адрес" required />
+          </label>
+
+          <label class="lead-modal__field">
+            <span class="sr-only">Телефон</span>
+            <input type="tel" name="Телефон" placeholder="Введите ваш телефон" required />
+          </label>
+
+          <label class="lead-modal__textlabel" for="lead-telegram">Telegram ник</label>
+          <label class="lead-modal__field">
+            <span class="sr-only">Telegram ник</span>
+            <input id="lead-telegram" type="text" name="Telegram" placeholder="@tgnik" required />
+          </label>
+
+          <button class="lead-modal__submit" type="submit">Оплатить 3 900 руб.</button>
+        </form>
+      </div>
+    </div>
+
     <script src="carousel.js" defer></script>
     <script src="lightbox.js" defer></script>
     <script src="video-modal.js" defer></script>
+    <script src="lead-form.js" defer></script>
   </body>
 </html>
