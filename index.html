@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>НейроКреатор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-logo" href="#">
+          <span class="site-logo__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 3c-1.2 0-2.2.5-3 1.3C8.2 3.5 7.2 3 6 3c-1.7 0-3 1.3-3 3 0 1.1.6 2 1.5 2.5C3.6 9 3 10.4 3 12c0 2.8 2.2 5 5 5h.5c.8 1.7 2.5 3 4.5 3s3.7-1.3 4.5-3H18c2.8 0 5-2.2 5-5 0-1.6-.6-3-1.5-3.5.9-.5 1.5-1.4 1.5-2.5 0-1.7-1.3-3-3-3-1.2 0-2.2.5-3 1.3-.8-.8-1.8-1.3-3-1.3z"
+                stroke="currentColor"
+                stroke-width="1.2"
+                fill="rgba(41,211,193,0.2)"
+              />
+              <path
+                d="M9 12h2l1 2 2-4h2"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="site-logo__text">НейроКреатор</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="#subscription">О подписке</a>
+          <a href="#what-you-get">Что получишь</a>
+          <a href="#about">Обо мне</a>
+        </nav>
+      </div>
+    </header>
+
+    <header class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-main">
+            <h1 class="hero-title">
+              Научись создавать контент через <span class="text-accent">нейросети</span> и зарабатывать
+              удалённо
+            </h1>
+            <p class="lead hero-lead">
+              За 3 недели ты освоишь новую трендовую профессию, сделаешь первые фото- и
+              видеокейсы и начнёшь получать заказы — работая только с телефона.
+            </p>
+            <ul class="hero-check">
+              <li>Без навыков дизайна и программирования</li>
+              <li>Понятный план монетизации</li>
+            </ul>
+          </div>
+
+          <aside class="offer-card" id="subscription" aria-labelledby="offer-card-heading">
+            <p class="offer-card__heading" id="offer-card-heading">Что входит в подписку:</p>
+            <div class="offer-card__grid">
+              <div class="offer-card__item">
+                <span class="offer-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M5 9.5L12 6l7 3.5V10c0 .5-.2 1-.6 1.4L12 14 5.6 11.4A2 2 0 015 10v-.5zm0 3.4l1 .5v4.1c0 .6.4 1 1 1h10a1 1 0 001-1v-4.1l1-.5V16a2 2 0 01-2 2H7a2 2 0 01-2-2v-3.1z"
+                      opacity=".95"
+                    />
+                  </svg>
+                </span>
+                <span>9 подробных видеоуроков</span>
+              </div>
+              <div class="offer-card__item">
+                <span class="offer-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M9 21h6v-1H9v1zm3-19a5.5 5.5 0 00-2.7 10.3c.4.2.7.5.7 1V16h4v-3.7c0-.5.3-.8.7-1A5.5 5.5 0 0012 2zm0 2a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"
+                      opacity=".95"
+                    />
+                  </svg>
+                </span>
+                <span>Подробные связки по работе в нейросетях</span>
+              </div>
+              <div class="offer-card__item">
+                <span class="offer-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 4h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                    />
+                    <path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <span>100+ готовых шаблонов</span>
+              </div>
+              <div class="offer-card__item">
+                <span class="offer-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <circle cx="9" cy="10" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+                    <circle cx="16" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5" fill="none" />
+                    <path
+                      d="M4 19c1.5-3 4.5-4 6-4s2 .5 3 1M16 14c2 0 4 1.5 5 3"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <span>2 обученных ИИ-помощника для создания контента</span>
+              </div>
+            </div>
+            <p class="offer-card__price">3 900 ₽</p>
+            <a class="btn btn--hero-cta" href="#offer">
+              <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M13 2L3 14h7v8l11-13h-8l0-7z"
+                />
+              </svg>
+              Войти в НейроКреатор
+            </a>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section alt" id="week-results">
+        <div class="container">
+          <div class="section-divider" aria-hidden="true"></div>
+          <div class="section-head">
+            <h2>Что ты сможешь делать уже в первые 7–14 дней</h2>
+            <p class="section-head__tagline">
+              Результаты обучения, которые можно монетизировать сразу.
+            </p>
+          </div>
+          <div class="pill-grid">
+            <span>Дистанционный доход</span>
+            <span>Мгновенная генерация вариантов</span>
+            <span>Удалённая работа 3-4 часа в день</span>
+          </div>
+
+          <div class="grid two feature-grid">
+            <article class="card card--feature">
+              <div class="card-feature__thumb-wrap">
+                <div
+                  class="media-carousel media-carousel--in-card"
+                  data-carousel
+                  data-lightbox
+                  aria-roledescription="carousel"
+                  aria-label="Примеры нейро-фотосессии"
+                >
+                  <div class="media-carousel__viewport" tabindex="0">
+                    <div class="media-carousel__slide">
+                      <img src="images/creative-2.png" alt="" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="media-carousel__slide">
+                      <img src="images/creative-3.png" alt="" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="media-carousel__slide">
+                      <img src="images/creative-4.png" alt="" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="media-carousel__slide">
+                      <img src="images/creative-5.png" alt="" loading="lazy" decoding="async" />
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="media-carousel__btn media-carousel__btn--prev"
+                    aria-label="Предыдущий слайд"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    class="media-carousel__btn media-carousel__btn--next"
+                    aria-label="Следующий слайд"
+                  >
+                    ›
+                  </button>
+                </div>
+                <span class="card-feature__play" aria-hidden="true"></span>
+              </div>
+              <div class="card-feature__body">
+                <h3>Нейро-фотосессия</h3>
+                <p>Создавай студийные кадры для брендов без дорогого оборудования.</p>
+              </div>
+            </article>
+
+            <article class="card card--feature">
+              <div
+                class="card-feature__thumb"
+                role="button"
+                tabindex="0"
+                data-video-src="videos/vstavki-iz-kino.mp4"
+                aria-label="Смотреть видео: Вставки из кино"
+              >
+                <video
+                  class="card-feature__preview"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  src="videos/vstavki-iz-kino.mp4"
+                ></video>
+                <span class="card-feature__play" aria-hidden="true"></span>
+              </div>
+              <div class="card-feature__body">
+                <h3>Вставки из кино</h3>
+                <p>Органично вписывай продукты в любые сцены из фильмов.</p>
+              </div>
+            </article>
+
+            <article class="card card--feature">
+              <div
+                class="card-feature__thumb"
+                role="button"
+                tabindex="0"
+                data-video-src="videos/sozdanie-reklamnyh-kreativov.mp4"
+                aria-label="Смотреть видео: Создание дорогих рекламных креативов"
+              >
+                <video
+                  class="card-feature__preview"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  src="videos/sozdanie-reklamnyh-kreativov.mp4"
+                ></video>
+                <span class="card-feature__play" aria-hidden="true"></span>
+              </div>
+              <div class="card-feature__body">
+                <h3>Создание дорогих рекламных креативов</h3>
+                <p>Сотни вариантов профессиональных креативов за пару минут.</p>
+              </div>
+            </article>
+
+            <article class="card card--feature">
+              <div
+                class="card-feature__thumb"
+                role="button"
+                tabindex="0"
+                data-video-src="videos/sozdanie-neiroblogerov.mp4"
+                aria-label="Смотреть видео: Создание нейроблогеров для обзора товаров"
+              >
+                <video
+                  class="card-feature__preview"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  src="videos/sozdanie-neiroblogerov.mp4"
+                ></video>
+                <span class="card-feature__play" aria-hidden="true"></span>
+              </div>
+              <div class="card-feature__body">
+                <h3>Создание нейроблогеров для обзора товаров</h3>
+                <p>Генерируй уникальных персонажей для реламы.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-profession">
+        <div class="container">
+          <h2>Почему это становится профессией №1</h2>
+          <p class="section-profession__lead">
+            Рынок ИИ-контента растет в 10 раз быстрее традиционного. Освойте новую
+            востребованную профессию
+          </p>
+
+          <div class="profession-split">
+            <div class="profession-feature-card">
+              <span class="profession-feature-card__brain" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 4a4 4 0 00-2 7.5V14h4v-2.5A4 4 0 0012 4z"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                  />
+                  <circle cx="9" cy="9" r="1" fill="currentColor" />
+                  <circle cx="15" cy="9" r="1" fill="currentColor" />
+                  <path
+                    d="M8 17h8M10 20h4"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="18" cy="6" r="2.5" stroke="currentColor" stroke-width="1.2" fill="none" />
+                  <path d="M18 4v1M18 7v1M16.5 6h-1M19.5 6h1" stroke="currentColor" stroke-width="1" />
+                </svg>
+              </span>
+              <span class="profession-feature-card__bolt" aria-hidden="true">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13 2L3 14h7v8l11-13h-8l0-7z" opacity=".12" />
+                </svg>
+              </span>
+              <ul class="profession-feature-card__checks">
+                <li>Удалённая работа 3-4 часа в день</li>
+                <li>Мгновенная генерация вариантов</li>
+                <li>Дистанционный доход</li>
+              </ul>
+              <div class="profession-feature-card__salary">
+                <span class="profession-feature-card__salary-label">ЗАРАБОТАЙТЕ УЖЕ В ПЕРВЫЙ МЕСЯЦ ОТ</span>
+                <strong class="profession-feature-card__salary-sum">40 000 ₽</strong>
+              </div>
+            </div>
+
+            <div class="profession-job-column">
+              <article class="job-card">
+                <header class="job-card__head">
+                  <h3 class="job-card__title">
+                    <span class="job-card__bullet" aria-hidden="true"></span>
+                    Создание видео с помощью нейросети
+                  </h3>
+                  <span class="job-card__price">до 5000 ₽</span>
+                </header>
+                <p class="job-card__text">
+                  Нужен промо ролик для продукта: 2 клипа по 5–10 секунд, стиль modern,
+                  референсы пришлю в личные сообщения · срок — до конца недели · правки 2
+                  раунда включены.
+                </p>
+                <div class="job-card__meta">
+                  <span class="job-card__meta-line">Дистанционно · Москва</span>
+                  <span class="job-card__meta-line">Заказчик: Анастасия</span>
+                </div>
+                <div class="job-card__footer">
+                  <span class="job-card__badge">Скидка на отклик</span>
+                  <span class="job-card__time">37 минут назад</span>
+                </div>
+              </article>
+
+              <article class="job-card job-card--with-thumbs">
+                <div class="job-card__main">
+                  <header class="job-card__head">
+                    <h3 class="job-card__title">
+                      <span class="job-card__bullet" aria-hidden="true"></span>
+                      ИИ видео
+                    </h3>
+                    <span class="job-card__price">до 5000 ₽</span>
+                  </header>
+                  <p class="job-card__text">
+                    Короткое видео для соцсетей: вертикальный формат, хук в первые 2 секунды,
+                    субтитры · дедлайн 3 дня · исходники в Figma/ссылкой на диск.
+                  </p>
+                  <div class="job-card__meta">
+                    <span class="job-card__meta-line">Дистанционно · Москва</span>
+                    <span class="job-card__meta-line">23 февр. · 25 февр.</span>
+                    <span class="job-card__meta-line">Заказчик: Настя</span>
+                  </div>
+                  <div class="job-card__footer">
+                    <span class="job-card__badge">Скидка на отклик</span>
+                    <span class="job-card__time">53 минуты назад</span>
+                  </div>
+                </div>
+                <div class="job-card__thumbs" aria-label="Превью работ">
+                  <button type="button" class="job-card__thumb-btn" data-lightbox-single>
+                    <img src="images/kwork-preview.png" alt="Превью примера работы" loading="lazy" />
+                  </button>
+                  <button type="button" class="job-card__thumb-btn" data-lightbox-single>
+                    <img src="images/kwork-preview.png" alt="" loading="lazy" />
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-earning-paths">
+        <div class="container">
+          <h2 class="earning-paths__title">3 пути заработка</h2>
+          <div class="earning-paths__grid">
+            <article class="earning-card">
+              <span class="earning-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect x="4" y="7" width="16" height="11" rx="1" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </span>
+              <h3 class="earning-card__heading">Фриланс</h3>
+              <p class="earning-card__desc">Делаешь нейро‑контент для брендов/магазинов</p>
+              <ul class="earning-card__list">
+                <li>От 3–5 тыс ₽ за ролик</li>
+                <li>От 500-1500 за фотографию</li>
+                <li>От 20 000 - пакет видео + фото</li>
+              </ul>
+            </article>
+            <article class="earning-card">
+              <span class="earning-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7-11-7z" />
+                </svg>
+              </span>
+              <h3 class="earning-card__heading">Нейро-Блогинг</h3>
+              <p class="earning-card__desc">Создание виртуальных инфлюенсеров</p>
+              <ul class="earning-card__list">
+                <li>Доход от рекламы</li>
+                <li>Не ограниченное количество клиентов</li>
+              </ul>
+            </article>
+            <article class="earning-card">
+              <span class="earning-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V7l8-4z" stroke="currentColor" stroke-width="1.5" fill="none" />
+                </svg>
+              </span>
+              <h3 class="earning-card__heading">Работа в найме</h3>
+              <p class="earning-card__desc">Стабильная высокооплачиваемая профессия</p>
+              <ul class="earning-card__list">
+                <li>Дистанционный доход</li>
+                <li>3-4 часа работы в день</li>
+              </ul>
+            </article>
+          </div>
+          <div class="earning-paths__cta-wrap">
+            <a class="btn btn--hero-cta earning-paths__cta" href="#offer">
+              <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M13 2L3 14h7v8l11-13h-8l0-7z" />
+              </svg>
+              Получить доступ
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-3months" id="what-you-get">
+        <div class="container">
+          <h2 class="section-3months__title">
+            Что ты получишь за 3 месяца в <span class="text-accent">НейроКреатор</span>
+          </h2>
+          <p class="section-3months__lead">
+            Полный набор инструментов и знаний
+            <br />
+            для быстрого старта в нейроконтенте.
+          </p>
+
+          <div class="three-months-grid" aria-label="Что ты получишь за 3 месяца">
+            <article class="three-months-card three-months-card--small">
+              <div class="three-months-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                  <rect x="5" y="6" width="14" height="12" rx="3" stroke="currentColor" stroke-width="1.2" opacity=".35" />
+                </svg>
+              </div>
+              <h3>9 видеоуроков</h3>
+              <p>
+                Пошаговый инструкции без воды: от оплаты необходимых нейросетей до финального
+                монтажа на телефоне.
+              </p>
+            </article>
+
+            <article class="three-months-card three-months-card--small">
+              <div class="three-months-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 4h10v16H7V4z" stroke="currentColor" stroke-width="1.2" opacity=".35" />
+                  <path d="M9 8h6M9 12h6M9 16h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>100+ готовых шаблонов</h3>
+              <p>
+                Готовые шаблоны для любых задач: одежда, свет, фон, реалистичные текстуры
+                кожи и т.д.
+              </p>
+            </article>
+
+            <article class="three-months-card three-months-card--small">
+              <div class="three-months-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M10 6h8M10 12h8M10 18h8"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6 7l1 1 2-2"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Подробный связки по работе в нейросетях</h3>
+              <p>
+                Список проверенных инструментов, которые экономят время и бюджет на генерации.
+              </p>
+            </article>
+
+            <article class="three-months-card three-months-card--big">
+              <div class="three-months-card--big__top">
+                <span class="three-months-card--big__top-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V7l8-4z" stroke="currentColor" stroke-width="1.4" opacity=".45" />
+                    <path d="M9.5 12.2l1.7 1.7 3.3-3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                2 обученных ИИ-помощника для создания контента
+              </div>
+
+              <div class="three-months-card--big__body">
+                <div class="three-months-card--big__left">
+                  <h4>ИИ-технолог</h4>
+                  <p>
+                    Подбирает ИИ-площадку под задачу и пишет идеальные инструкции для них за тебя.
+                  </p>
+                  <h4>Сценарист</h4>
+                  <p>Создаёт цепляющие сюжеты, хуки, сценарии для рекламы и контента.</p>
+                </div>
+                <div class="three-months-card--big__divider" aria-hidden="true"></div>
+                <div class="three-months-card--big__right">
+                  <div class="three-months-card--big__hours">24/7</div>
+                  <div class="three-months-card--big__hours-label">ДОСТУПНО ВСЕГДА</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="three-months-card three-months-card--channel">
+              <div class="three-months-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 12c2-6 14-6 16 0-2 6-14 6-16 0z" stroke="currentColor" stroke-width="1.4" opacity=".35" />
+                  <path d="M12 8v8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Закрытый канал</h3>
+              <p>Оперативные обновления нейросетей, тренды и пошаговые инструкции.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-fits">
+        <div class="container">
+          <h2 class="fits-title">
+            Кому <span class="fits-title__accent">подходит</span>
+          </h2>
+
+          <div class="fits-grid" aria-label="Кому подходит">
+            <article class="fits-card">
+              <div class="fits-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 8h10M7 12h10M7 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                  <rect x="4.5" y="4.5" width="15" height="15" rx="4" stroke="currentColor" stroke-width="1.2" opacity=".35" />
+                </svg>
+              </div>
+              <h3>Новички</h3>
+              <p>Новая востребованная профессия и стабильный поток удалённых заказов.</p>
+            </article>
+
+            <article class="fits-card">
+              <div class="fits-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 7h8M8 12h8M8 17h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                  <path d="M6 7v10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".6" />
+                </svg>
+              </div>
+              <h3>Фрилансеры</h3>
+              <p>Освойте ИИ-инструменты, чтобы работать быстрее, брать больше заказов и увеличивать средний чек без выгорания.</p>
+            </article>
+
+            <article class="fits-card">
+              <div class="fits-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 6v12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".6" />
+                  <path d="M7 10l5-4 5 4v8H7v-8z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>SMM/монтажёр/ дизайнер</h3>
+              <p>Способ быстрее и дешевле делать качественный контент для своих клиентов.</p>
+            </article>
+          </div>
+
+          <div class="fits-cta-wrap">
+            <a class="fits-cta" href="#offer">
+              <span class="fits-cta__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M13 2L3 14h7v8l11-13h-8l0-7z" fill="currentColor" />
+                </svg>
+              </span>
+              Вступить сейчас
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-calculator" aria-label="Калькулятор окупаемости">
+        <div class="container">
+          <h2 class="section-calculator__title">Калькулятор окупаемости</h2>
+
+          <div class="calculator-card" role="group" aria-label="Расходы, доходы и прибыль">
+            <div class="calculator-card__grid">
+              <div class="calculator-card__content">
+                <div class="calculator-card__block">
+                  <div class="calculator-card__block-title">РАСХОДЫ В ПЕРВЫЙ МЕСЯЦ</div>
+
+                  <div class="calculator-line">
+                    <span class="calculator-amount">3 900 ₽</span>
+                    <span class="calculator-label">ОБУЧЕНИЕ</span>
+                  </div>
+                  <div class="calculator-line">
+                    <span class="calculator-amount">890 ₽</span>
+                    <span class="calculator-label">подписка на ИИ</span>
+                  </div>
+                  <div class="calculator-line">
+                    <span class="calculator-amount">3 800 ₽</span>
+                    <span class="calculator-label">подписка GPT</span>
+                  </div>
+
+                  <div class="calculator-total-line">
+                    <span class="calculator-amount">ИТОГО</span>
+                    <span class="calculator-amount">8 500 ₽</span>
+                  </div>
+                </div>
+
+                <div class="calculator-card__block calculator-card__block--income">
+                  <div class="calculator-card__block-title">ДОХОДЫ</div>
+
+                  <div class="calculator-line">
+                    <span class="calculator-amount">15 000 ₽</span>
+                    <span class="calculator-label">3 ВИДЕО Х 5 000 ₽</span>
+                  </div>
+                  <div class="calculator-line">
+                    <span class="calculator-amount">7 000 ₽</span>
+                    <span class="calculator-label">1 клиент на ИИ-фото</span>
+                  </div>
+                  <div class="calculator-line">
+                    <span class="calculator-amount">25 000 ₽</span>
+                    <span class="calculator-label">1 ВИДЕОКЛИП</span>
+                  </div>
+
+                  <div class="calculator-total-line">
+                    <span class="calculator-amount">ИТОГО</span>
+                    <span class="calculator-amount">59 000 ₽</span>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="calculator-card__result" aria-label="Прибыль за месяц">
+                <div class="calculator-card__result-label">ИТОГО</div>
+                <div class="calculator-card__result-value">38 000 ₽</div>
+                <div class="calculator-card__result-sub">прибыли</div>
+              </aside>
+            </div>
+          </div>
+
+          <div class="calculator-review">
+            <img
+              src="images/calc-review.png"
+              alt="Михаил С. — пример заявки"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cases" id="about">
+        <div class="container">
+          <h2>Кто я? Мои кейсы</h2>
+
+          <div class="cases-grid" aria-label="Кейсы и результаты обучения">
+            <article class="case-card case-about">
+              <div class="case-about__top">
+                <button type="button" class="case-media__btn case-media__btn--avatar" data-lightbox-single aria-label="Смотреть фото">
+                  <img
+                    src="images/case-about.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+                <div class="case-about__titles">
+                  <h3>Обо мне</h3>
+                  <p class="case-about__name"><strong>СЕРГЕЙ РУБИЛОВ</strong></p>
+                </div>
+              </div>
+              <p>
+                С нуля после освобождения из тюрьмы в 2025 году вышел на доход 50−70 тыс. ₽ в
+                месяц за счёт работы с ИИ.
+              </p>
+              <p>
+                Я не технарь.Меня никто не спонсировал, а жить на что-то нужно было.Никакого
+                успешного успеха.
+              </p>
+              <p>Только системная работа и результат.</p>
+              <p>Обучаю как использовать ИИ для реального заработка, без воды и сложной теории.</p>
+            </article>
+
+            <article class="case-card case-item">
+              <div class="case-media case-media--image">
+                <button type="button" class="case-media__btn" data-lightbox-single aria-label="Открыть изображение">
+                  <img
+                    src="images/case-cards.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </div>
+              <div class="case-body">
+                <p class="case-body__label"><strong>ЧТО СДЕЛАЛ</strong></p>
+                <p>Изготовление карточек товара для маркетплейсов</p>
+                <p class="case-body__label"><strong>СКОЛЬКО ВРЕМЕНИ УШЛО</strong></p>
+                <p>40 минут с нуля</p>
+                <p class="case-body__label"><strong>РЕЗУЛЬТАТ</strong></p>
+                <p>Получил свои первые 1 500 рублей</p>
+              </div>
+            </article>
+
+            <article class="case-card case-item">
+              <div class="case-media case-media--image">
+                <button type="button" class="case-media__btn" data-lightbox-single aria-label="Открыть изображение">
+                  <img
+                    src="images/case-session.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </div>
+              <div class="case-body">
+                <p class="case-body__label"><strong>ЧТО СДЕЛАЛ</strong></p>
+                <p>Создание нейро-фотосессии</p>
+                <p class="case-body__label"><strong>СКОЛЬКО ВРЕМЕНИ УШЛО</strong></p>
+                <p>1,5 часа с нуля</p>
+                <p class="case-body__label"><strong>РЕЗУЛЬТАТ</strong></p>
+                <p>6 000 рублей за фотосессию</p>
+              </div>
+            </article>
+
+            <article class="case-card case-item">
+              <div
+                class="case-media case-media--video"
+                role="button"
+                tabindex="0"
+                data-video-src="videos/case-clips.mp4"
+                aria-label="Смотреть видео: 3 клипа из оживлённых мною фото"
+              >
+                <video
+                  class="case-media__video"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  src="videos/case-clips.mp4"
+                ></video>
+                <span class="case-media__play" aria-hidden="true"></span>
+              </div>
+              <div class="case-body">
+                <p class="case-body__label"><strong>ЧТО СДЕЛАЛ</strong></p>
+                <p>3 клипа из оживлённых мною фото</p>
+                <p class="case-body__label"><strong>СКОЛЬКО ВРЕМЕНИ УШЛО</strong></p>
+                <p>3 часа с нуля</p>
+                <p class="case-body__label"><strong>РЕЗУЛЬТАТ</strong></p>
+                <p>15 000 рублей</p>
+              </div>
+            </article>
+
+            <article class="case-card case-item">
+              <div
+                class="case-media case-media--video"
+                role="button"
+                tabindex="0"
+                data-video-src="videos/case-avatar.mp4"
+                aria-label="Смотреть видео: ИИ аватара и рекламу"
+              >
+                <video
+                  class="case-media__video"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  src="videos/case-avatar.mp4"
+                ></video>
+                <span class="case-media__play" aria-hidden="true"></span>
+              </div>
+              <div class="case-body">
+                <p class="case-body__label"><strong>ЧТО СДЕЛАЛ</strong></p>
+                <p>ИИ аватара и рекламу</p>
+                <p class="case-body__label"><strong>СКОЛЬКО ВРЕМЕНИ УШЛО</strong></p>
+                <p>1,5 часа с нуля</p>
+                <p class="case-body__label"><strong>РЕЗУЛЬТАТ</strong></p>
+                <p>2 000 рублей, так как первый опыт. Сейчас беру от 5 000 рублей</p>
+              </div>
+            </article>
+
+            <article class="case-card case-item">
+              <div
+                class="case-media case-media--video"
+                role="button"
+                tabindex="0"
+                data-video-src="videos/case-shoes.mp4"
+                aria-label="Смотреть видео: Рекламный ролик обуви"
+              >
+                <video
+                  class="case-media__video"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  src="videos/case-shoes.mp4"
+                ></video>
+                <span class="case-media__play" aria-hidden="true"></span>
+              </div>
+              <div class="case-body">
+                <p class="case-body__label"><strong>ЧТО СДЕЛАЛ</strong></p>
+                <p>Рекламный ролик обуви</p>
+                <p class="case-body__label"><strong>СКОЛЬКО ВРЕМЕНИ УШЛО</strong></p>
+                <p>2 часа с нуля</p>
+                <p class="case-body__label"><strong>РЕЗУЛЬТАТ</strong></p>
+                <p>8 000 рублей</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2>Часто задаваемые вопросы</h2>
+          <div class="faq">
+            <article class="card">
+              <h3>Нужен ли компьютер?</h3>
+              <p>Нет. Можно с телефона, я зачастую с него и работаю.</p>
+            </article>
+            <article class="card">
+              <h3>Я - гуманитарий, справлюсь?</h3>
+              <p>Да, мы работаем по готовым шаблонам и пошагово.</p>
+            </article>
+            <article class="card">
+              <h3>Сколько времени нужно?</h3>
+              <p>30-40 минут в день достаточно для первых кейсов.</p>
+            </article>
+            <article class="card">
+              <h3>Где брать клиентов?</h3>
+              <p>В уроке есть шаблоны, площадки.</p>
+            </article>
+            <article class="card">
+              <h3>Что с оплатой/доступом?</h3>
+              <p>Доступ на 3 месяца. Далее вы уже можете продлевать или выйти.</p>
+            </article>
+            <article class="card">
+              <h3>Это подписка или разовая покупка?</h3>
+              <p>
+                Оплачивая, вы получаете ссылку на выступление в закрытый канал. там уже сразу
+                можете заниматься по выпущенным урокам. Уроки будут добавляться постепенно в
+                течение 3х недель.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="offer">
+      <div class="container">
+        <p class="label">ФИНАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+        <h2>Зайди в НейроКреатор и начни зарабатывать с помощью ИИ</h2>
+        <p class="price-line">3 900 ₽ / 3 месяца</p>
+        <a class="btn large" href="#">ПОЛУЧИТЬ ДОСТУП ЗА 3900 ₽</a>
+        <p class="note">
+          Нажимая на кнопку, вы соглашаетесь с условиями публичной оферты и политики обработки
+          данных.
+        </p>
+        <div class="links">
+          <a href="#">НЕЙРОКРЕАТОР</a>
+          <a href="https://neirocretors.tilda.ws/privacy">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="lightbox"
+      id="lightbox"
+      hidden
+      aria-modal="true"
+      role="dialog"
+      aria-label="Просмотр фотографии"
+    >
+      <button type="button" class="lightbox__close" aria-label="Закрыть">×</button>
+      <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Предыдущее фото">‹</button>
+      <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Следующее фото">›</button>
+      <img class="lightbox__img" alt="" />
+    </div>
+
+    <div
+      class="video-modal"
+      id="video-modal"
+      hidden
+      aria-modal="true"
+      role="dialog"
+      aria-label="Воспроизведение видео"
+    >
+      <button type="button" class="video-modal__close" aria-label="Закрыть">×</button>
+      <div class="video-modal__frame">
+        <video class="video-modal__video" controls playsinline></video>
+      </div>
+    </div>
+
+    <script src="carousel.js" defer></script>
+    <script src="lightbox.js" defer></script>
+    <script src="video-modal.js" defer></script>
+  </body>
+</html>
